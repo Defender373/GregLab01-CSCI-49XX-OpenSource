@@ -23,7 +23,8 @@ Result of running ctest -D Experimental with new file
 
 
 ## Checkpoint 4
-Fixing the Test
+Fixing the TestNewArrayInterpolationDense.cxx file.
+Changed "c->SetValue(5, 1, 9);" into "c->SetValue(4, 1, 9);" to prevent array index out of bounds error.
 ![AddingChanges](https://user-images.githubusercontent.com/17090994/54861133-a37e2900-4cfa-11e9-879d-4e7ec62119f4.PNG)
 
 Was unable to upload to the CDash dashboard despite fixing the Test
