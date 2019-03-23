@@ -1,5 +1,5 @@
 # Gregory Saini - Lab08
-Note: Despite having Cmake-GUI and Visual Studios 2017, I was unable to get my ctest to run properly on the VTK files.
+Note: Despite having Cmake-GUI and Visual Studios 2017, I was unable to get my ctest to run properly on the VTK files. My submissions were not able to appear on the CDash website. 
 ## Checkpoint 1
 Cmake-GUI with VTK and my build directory
 ![VTKfirstCmake](https://user-images.githubusercontent.com/17090994/54860896-4cc32000-4cf7-11e9-8ddd-8ea0be4adea1.PNG)
