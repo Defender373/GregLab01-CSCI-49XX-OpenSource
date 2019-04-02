@@ -18,3 +18,6 @@
 
 ## Example 4
 ![Example04evidence](https://user-images.githubusercontent.com/17090994/55371491-74bb3c00-54cc-11e9-8fcf-27577a929c1a.PNG)
+
+![NewExample04](https://user-images.githubusercontent.com/17090994/55375438-22811780-54da-11e9-8df7-3b6ba42bc8d8.PNG)
+
