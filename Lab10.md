@@ -95,3 +95,25 @@ if __name__ == '__main__':
     pprint.pprint(random_word_requester())
     #debug = random_word_requester()
 ```
+
+checkpoint5.py pprint output
+```
+{'_id': ObjectId('56fe9e22bad6b23cde07b8c5'),
+ 'dates': [datetime.datetime(2019, 4, 6, 2, 49, 49, 621000),
+           datetime.datetime(2019, 4, 6, 2, 49, 49, 627000),
+           '2019-04-06T02:51:53.548087',
+           '2019-04-06T02:51:53.552074',
+           '2019-04-06T03:10:14.852828'],
+ 'definition': ' v. To lose big, or fail miserably.',
+ 'word': 'Blow Away'}
+{'_id': ObjectId('56fe9e22bad6b23cde07b8c5'),
+ 'dates': [datetime.datetime(2019, 4, 6, 2, 49, 49, 621000),
+           datetime.datetime(2019, 4, 6, 2, 49, 49, 627000),
+           '2019-04-06T02:51:53.548087',
+           '2019-04-06T02:51:53.552074',
+           '2019-04-06T03:10:14.852828',
+           '2019-04-06T03:10:14.869748'],
+ 'definition': ' v. To lose big, or fail miserably.',
+ 'word': 'Blow Away'}
+
+```
