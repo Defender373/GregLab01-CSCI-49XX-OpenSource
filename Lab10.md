@@ -26,6 +26,8 @@
 
 ![4-5-2019osLabcheckpoint4part2](https://user-images.githubusercontent.com/17090994/55664101-efe75f80-57f6-11e9-9982-e965e6b40039.PNG)
 
+This is my checkpoint4.py code
+
 ``` python
 from pymongo import MongoClient
 from bson.objectid import ObjectId
@@ -57,4 +59,39 @@ if __name__ == '__main__':
 
 
 ## Checkpoint 5
+This is my checkpoint5.py code
+```python
+from pymongo import MongoClient
+from bson.objectid import ObjectId
+import pprint
+import datetime
+import random
+client = MongoClient('localhost', 27017)
 
+db = client.mongo_db_lab
+collection = db.definitions
+
+def random_word_requester():
+    '''
+    This function should return a random word and its definition and also
+    log in the MongoDB database the timestamp that it was accessed.
+    '''
+    documents = []
+    totalDocuments = collection.estimated_document_count()
+    
+    for document in collection.find():
+        documents.append(document)
+    
+    #randomIndex = random.randint(0,totalDocuments)
+    randomIndex = 3 #This line of code makes us return the same word twice to test that timestamp is working properly.
+    
+    collection.update_one({"_id": documents[randomIndex]["_id"]}, {"$push": {"dates":datetime.datetime.utcnow().isoformat()}})
+    
+    return collection.find_one({"_id": documents[randomIndex]["_id"]})
+
+if __name__ == '__main__':
+    
+    pprint.pprint(random_word_requester())
+    pprint.pprint(random_word_requester())
+    #debug = random_word_requester()
+```
