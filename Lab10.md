@@ -26,5 +26,35 @@
 
 ![4-5-2019osLabcheckpoint4part2](https://user-images.githubusercontent.com/17090994/55664101-efe75f80-57f6-11e9-9982-e965e6b40039.PNG)
 
+` python
+from pymongo import MongoClient
+from bson.objectid import ObjectId
+import pprint
+client = MongoClient('localhost', 27017)
+
+if __name__ == '__main__':
+    #Setup to allow us to access the database
+    db = client.mongo_db_lab
+    collection = db.definitions
+        
+    #Fetch all records
+    for each in collection.find():
+        pprint.pprint(each)
+        
+    #Fetch one record
+    pprint.pprint(collection.find_one())
+    
+    #Fetch a specific record
+    pprint.pprint( collection.find({"word": "Toad"}) )
+    
+    #Fetch a record by object id
+    pprint.pprint(collection.find_one({"_id": ObjectId("56fe9e22bad6b23cde07b8b8")}))
+    
+    #Insert a new record
+    new_profile = {'definition': ' n. Make Angular Great Again.', 'word': 'MAGA'}
+    result = db.posts.insert_one(new_profile)
+`    
+
+
 ## Checkpoint 5
 
