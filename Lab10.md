@@ -26,7 +26,7 @@
 
 ![4-5-2019osLabcheckpoint4part2](https://user-images.githubusercontent.com/17090994/55664101-efe75f80-57f6-11e9-9982-e965e6b40039.PNG)
 
-` python
+``` python
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import pprint
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     #Insert a new record
     new_profile = {'definition': ' n. Make Angular Great Again.', 'word': 'MAGA'}
     result = db.posts.insert_one(new_profile)
-`    
+```    
 
 
 ## Checkpoint 5
