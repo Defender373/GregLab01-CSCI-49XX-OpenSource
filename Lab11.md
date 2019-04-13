@@ -25,7 +25,7 @@ I had trouble getting model.predict() to work with my images.
 ![Checkpoint3OSlabLast](https://user-images.githubusercontent.com/17090994/56074181-ea03f800-5d7b-11e9-8521-aa6a127eb0d9.PNG)
 
 My code trying to attempt checkpoint 3
-```
+```python
 #Greg's images, named and found on my desktop.
 #Trying to crop, invert, and greyscale my images
 imageOne = Image.open("clothing1squared.jpg")
