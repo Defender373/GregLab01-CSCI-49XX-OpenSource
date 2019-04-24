@@ -22,19 +22,30 @@ iv. The end product will be able to track the price of its users stocks in the m
 \]
 
 Part 1
-1. 
+1. Project selection
 Project 3rs
 
-2.
+3. Look up by hand and record in Lab3.md
 4 contributors
 Branches: master, Paul, Kinza, new
 Latest commit: May 3, 2018
 First commit: Feb 1, 2018
 1488 lines of code
 
-3. 
+4.Gitstats
+![Lab3gitstats](https://user-images.githubusercontent.com/17090994/56625213-44b61300-660a-11e9-8791-7d08d87eef5f.PNG)
+
+
+8. Streaming Contribution Visualizations
 https://youtu.be/y7tYQj8AE3s
 
 
 
 Part 2
+code:https://github.com/Defender373/GregLabs-CSCI-49XX-OpenSource/blob/master/Lab3/markdown.py-master/markdown.py-master/markdown.py
+
+testcode:https://github.com/Defender373/GregLabs-CSCI-49XX-OpenSource/blob/master/Lab3/markdown.py-master/markdown.py-master/test_markdown_unittest.py
+
+
+Results:
+![Lab3part2](https://user-images.githubusercontent.com/17090994/56625212-4384e600-660a-11e9-945e-bfc3cddda1c0.PNG)
